@@ -5,17 +5,44 @@
 </head>
 <body>
     <form action="/submit" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" size="10" maxlength="10"><br><br>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" size="10" maxlength="10"><br><br>
+        <label for="lname">Surname:</label>
+        <input type="text" id="lname" name="lname" size="10" maxlength="10"><br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
-
         <label for="age">Age:</label>
         <input type="number" id="age" name="age"><br><br>
 
-        <input type="submit" value="Submit"> &nbsp;
+        <input type="submit" value="Click Here"> &nbsp;
         <input type="reset" value="Reset">
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+        <label for="vehicle1">I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label><br>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="porsche">Porsche</option>
+        </select>
+
+        <p> This is a text area example </p>
+        <textarea name="sampletextarea" rows="4" cols="8"> Write here.. </textarea>textarea><br><br>
     </form>
 </body>
 </html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Gadgets and PC Components</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #0f1115 0%, #191d24 100%);
+            color: #f2f4f8;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 28px 16px 12px;
+            text-align: center;
+            background: #11151b;
+            border-bottom: 4px solid #ff4d4d;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            color: #7dd3fc;
+        }
+
+        header p {
+            margin: 0;
+            color: #cbd5e1;
+        }
+
+        nav, section, footer {
+            width: min(1100px, calc(100% - 32px));
+            margin: 16px auto;
+        }
+
+        nav {
+            background: #151a21;
+            padding: 14px;
+            border: 1px solid #2b3441;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #7dd3fc;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fca5a5;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 18px;
+            align-items: center;
+            background: #151a21;
+            border: 1px solid #2b3441;
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .hero img, .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .hero h2, h2 {
+            color: #fbbf24;
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: #151a21;
+            border: 1px solid #2b3441;
+            border-radius: 14px;
+            padding: 14px;
+        }
+
+        .card h3 {
+            margin: 12px 0 6px;
+            color: #93c5fd;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #ff4d4d;
+            color: white;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #151a21;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        th, td {
+            border: 1px solid #2b3441;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #ff4d4d;
+            color: white;
+        }
+
+        form {
+            background: #151a21;
+            border: 1px solid #2b3441;
+            border-radius: 14px;
+            padding: 16px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background: #0f1115;
+            color: #f2f4f8;
+        }
+
+        .inline-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 8px;
+        }
+
+        .inline-options label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        button {
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .primary {
+            background: #7dd3fc;
+            color: #0f172a;
+        }
+
+        .secondary {
+            background: #334155;
+            color: white;
+        }
+
+        .note {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0 30px;
+            color: #94a3b8;
+        }
+
+        marquee {
+            display: block;
+            margin: 14px 0;
+            padding: 8px 0;
+            background: #0f1115;
+            border-top: 1px solid #2b3441;
+            border-bottom: 1px solid #2b3441;
+            color: #fca5a5;
+            font-weight: bold;
+        }
+
+        @media (max-width: 720px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h1>Gamer Gadgets and PC Components</h1>
+        <p>A complete HTML sample page for gaming gear, PC builds, and basic ordering forms.</p>
+    </header>
+
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#gadgets">Gadgets</a>
+        <a href="#components">Components</a>
+        <a href="#price-table">Price Table</a>
+        <a href="#order-form">Order Form</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        Special Offer: Upgrade your setup with gaming keyboards, RGB mice, high-speed SSDs, and powerful graphic cards!
+    </marquee>
+
+    <section class="hero" id="hero">
+        <div>
+            <span class="badge">Featured Setup</span>
+            <h2>Build Your Ultimate Gaming Station</h2>
+            <p>
+                This sample webpage shows common HTML topics such as images, links, lists, tables, forms, and internal navigation.
+                It focuses on gamer gadgets and PC components like monitors, mice, keyboards, processors, RAM, and storage devices.
+            </p>
+            <p class="note">
+                Use the quick links above to jump between sections, just like the internal linking examples in the course files.
+            </p>
+        </div>
+        <div>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1200&q=80" alt="Gaming PC setup">
+            </a>
+        </div>
+    </section>
+
+    <section id="gadgets">
+        <h2>Gaming Gadgets</h2>
+        <div class="grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80" alt="Gaming keyboard">
+                <h3>Mechanical Keyboard</h3>
+                <p>Fast response keys, RGB lighting, and a durable design for long gaming sessions.</p>
+                <ul>
+                    <li>USB connectivity</li>
+                    <li>Anti-ghosting keys</li>
+                    <li>Custom lighting modes</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=80" alt="Gaming mouse">
+                <h3>Gaming Mouse</h3>
+                <p>High DPI, programmable buttons, and smooth tracking for precise aiming.</p>
+                <ul>
+                    <li>Adjustable DPI</li>
+                    <li>Ergonomic grip</li>
+                    <li>Side buttons</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Gaming headset">
+                <h3>Gaming Headset</h3>
+                <p>Clear audio, detachable microphone, and comfortable ear cups for online play.</p>
+                <ul>
+                    <li>Noise isolation</li>
+                    <li>Microphone support</li>
+                    <li>Long cable or wireless options</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="components">
+        <h2>PC Components</h2>
+        <div class="grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1624704765325-f10f0f6c60c0?auto=format&fit=crop&w=900&q=80" alt="Graphics card and computer parts">
+                <h3>Graphics Card</h3>
+                <p>Used for rendering games and video graphics at high frame rates and resolutions.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Motherboard and CPU components">
+                <h3>Motherboard and Processor</h3>
+                <p>The motherboard connects all parts, while the processor manages instructions and speed.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Solid state drive">
+                <h3>SSD and RAM</h3>
+                <p>SSD improves loading time and RAM helps the system multitask smoothly during gameplay.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="price-table">
+        <h2>Sample Price Table</h2>
+        <table>
+            <caption style="caption-side: top; padding-bottom: 10px; font-weight: bold; color: #7dd3fc;">Gaming Accessories and Components</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Use</th>
+                    <th>Estimated Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mechanical Keyboard</td>
+                    <td>Gadget</td>
+                    <td>Typing and gaming</td>
+                    <td>$60 - $120</td>
+                </tr>
+                <tr>
+                    <td>Gaming Mouse</td>
+                    <td>Gadget</td>
+                    <td>Precision control</td>
+                    <td>$25 - $80</td>
+                </tr>
+                <tr>
+                    <td>Graphics Card</td>
+                    <td>Component</td>
+                    <td>Video rendering</td>
+                    <td>$250 - $1000+</td>
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td>Component</td>
+                    <td>Fast storage</td>
+                    <td>$40 - $200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="order-form">
+        <h2>Order Form</h2>
+        <form action="#" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="budget">Budget</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+            <label for="category">Choose Category</label>
+            <select id="category" name="category">
+                <option value="gadgets">Gaming Gadgets</option>
+                <option value="components">PC Components</option>
+                <option value="complete-build">Complete PC Build</option>
+            </select>
+
+            <label>Preferred Items</label>
+            <div class="inline-options">
+                <label><input type="checkbox" name="items" value="keyboard"> Keyboard</label>
+                <label><input type="checkbox" name="items" value="mouse"> Mouse</label>
+                <label><input type="checkbox" name="items" value="headset"> Headset</label>
+                <label><input type="checkbox" name="items" value="gpu"> Graphics Card</label>
+                <label><input type="checkbox" name="items" value="ssd"> SSD</label>
+            </div>
+
+            <label>Build Type</label>
+            <div class="inline-options">
+                <label><input type="radio" name="buildtype" value="budget"> Budget Build</label>
+                <label><input type="radio" name="buildtype" value="midrange"> Mid-Range Build</label>
+                <label><input type="radio" name="buildtype" value="highend"> High-End Build</label>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you want in your setup"></textarea>
+
+            <div class="buttons">
+                <button type="submit" class="primary">Submit</button>
+                <button type="reset" class="secondary">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            If you want to send an email, use this sample mail link:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vaisakhmanu2027@cs.sjcetpalai.ac.in" target="_blank" style="color:#7dd3fc;">Send Email</a>
+        </p>
+        <p>
+            <a href="#top" style="color:#fca5a5;">Back to Top</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>HTML practice page for gamer gadgets and PC components.</p>
+    </footer>
+
+</body>
+</html>
