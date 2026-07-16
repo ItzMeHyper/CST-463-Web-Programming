@@ -42,7 +42,38 @@
         </select>
 
         <p> This is a text area example </p>
-        <textarea name="sampletextarea" rows="4" cols="8"> Write here.. </textarea>textarea><br><br>
+        <textarea name="sampletextarea" rows="4" cols="8"> Write here.. </textarea><br><br>
+
+        <p> Below Shown is a drop down list</p>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist>
+
+        <input type="text" id="urname" name="urname" required> <br><br>
+        <p> About Yourself: </p>
+        <textarea name="textname" rows="4" cols="8"> Write here.. </textarea><br><br>
+        <p> Choose your birth month </p>
+        <input list="month">
+        <datalist id="month" autocomplete="on">
+            <option value="Jan">
+            <option value="Feb">
+            <option value="Mar">
+            <option value="Apr">
+            <option value="May">
+            <option value="Jun">
+            <option value="Jul">
+            <option value="Aug">
+            <option value="Sep">
+            <option value="Oct">
+            <option value="Nov">
+            <option value="Dec">
+        </datalist>
     </form>
 </body>
 </html>
