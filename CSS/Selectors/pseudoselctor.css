@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Selector Example</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        input:hover {
+            background-color: lightblue;
+            color: blue;
+        }
+
+        input:focus {
+            border: 3px solid red;
+            outline: none;
+            color: red;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2 style="color: purple;">CSS Types with Pseudo Selectors</h2>
+
+    <p>
+        Cascading Style Sheets (CSS) is used to style HTML documents.
+        It makes web pages attractive and responsive.
+    </p>
+
+    <form>
+        <input type="text"
+               placeholder="Enter your name"
+               style="background-color: lightyellow; padding:10px;">
+
+        <br><br>
+
+        <input type="email"
+               placeholder="Enter your email"
+               style="background-color: lightcyan; padding:10px;">
+    </form>
+
+    <br>
+
+    <a href="https://www.google.com">Visit Google</a>
+
+</body>
+</html>
