@@ -4,7 +4,7 @@ body {
 	padding: 32px;
 }
 
-h1.external-css {
+.external-css {
 	color: #1d4ed8;
 	font-family: Arial, sans-serif;
 	text-align: center;
