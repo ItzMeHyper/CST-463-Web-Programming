@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Numbers and Show Alert</title>
+</head>
+<body>
+    <h2>Display Numbers and Show Alert</h2>
+    <p id="result"></p>
+
+    <button onclick="showAlert()">Click Me</button>
+
+    <script>
+        let num1 = parseInt(prompt("Enter the first number:"));
+        let num2 = parseInt(prompt("Enter the second number:"));
+        let sum = num1 + num2;
+
+        document.getElementById("result").innerHTML = "First Number: " + num1 + "<br>" +
+                                                      "Second Number: " + num2 + "<br>" +
+                                                      "Sum: " + sum;
+        
+
+        function showAlert() {
+            alert("Sum is: " + sum);
+        }
+    </script>
+</body>
+</html>
