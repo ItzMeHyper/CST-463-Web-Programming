@@ -1,0 +1,49 @@
+ body {
+     font-family: Arial, sans-serif;
+     background: #f4f4f4;
+     margin: 20px;
+ }
+
+ h1 {
+     text-align: center;
+     color: navy;
+     background: #eaeaea;
+     padding: 15px;
+ }
+
+ .faq-section {
+     margin: 20px;
+ }
+
+ .faq-section p {
+     font-size: 18px;
+     margin: 12px;
+ }
+
+ .faq-section a {
+     text-decoration: none;
+     color: steelblue;
+ }
+
+ .faq-section a:hover {
+     color: red;
+     text-decoration: underline;
+ }
+
+ .answers {
+     margin-top: 30px;
+     border-top: 2px solid gray;
+     padding-top: 20px;
+ }
+
+ .answers div {
+     margin-bottom: 20px;
+ }
+
+ .answers p {
+     line-height: 1.6;
+ }
+
+ .answers strong {
+     color: green;
+ }
