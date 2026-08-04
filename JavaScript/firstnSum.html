@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of First N Numbers</title>
+</head>
+<body>
+
+<h2>Sum of First N Numbers</h2>
+
+<input type="number" id="num" placeholder="Enter n">
+<br>
+
+<button onclick="findSum()">Find Sum</button>
+
+<script>
+function findSum() {
+
+    let n = parseInt(document.getElementById("num").value);
+
+    let sum = 0;
+
+    for(let i = 1; i <= n; i++) {
+        sum += i;
+    }
+
+    alert("Sum = " + sum);
+}
+</script>
+
+</body>
+</html>

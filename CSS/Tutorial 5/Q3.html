@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Practical - Q3</title>
+<style>
+
+  a:hover {
+    background-color: green;
+  }
+  a:active {
+    background-color: green;
+  }
+
+  ul.book-list {
+    list-style-image: url('book.png');
+    width: 200px;
+  }
+
+  body {
+    background-image: url('Flower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 300px;
+    background-color: white; 
+  }
+  table, td, th {
+    border-top: double 4px black;
+    border-bottom: double 4px black;
+    border-left: dashed 2px black;
+    border-right: dashed 2px black;
+  }
+  td, th {
+    padding: 8px;
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+  <h2>i. Link Hover / Active</h2>
+  <a href="#">Hover or click this link</a>
+
+  <h2>ii. Unordered List with Book Icon</h2>
+  <ul class="book-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h2>iii. Background Image</h2>
+  <p>(Flower.png is set as the page background)</p>
+
+  <h2>iv. Table with Custom Borders</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>22</td>
+    </tr>
+  </table>
+
+</body>
+</html>

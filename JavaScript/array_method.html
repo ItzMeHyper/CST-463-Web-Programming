@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array and String Methods Demo</title>
+</head>
+
+<body>
+
+<h2>JavaScript Array and String Methods</h2>
+
+<button onclick="runDemo()">Run Demo</button>
+
+<pre id="output"></pre>
+
+
+<script>
+
+function runDemo() {
+
+    let result = "";
+
+    // =====================================================
+    // 1. ARRAY INSERTION METHODS
+    // =====================================================
+
+    let arr = [10, 20, 30];
+
+    result += "Original Array: " + arr + "\n\n";
+
+
+    // PUSH()
+    // Adds element(s) at the end of the array
+    arr.push(40);
+    result += "After push(40): " + arr + "\n";
+
+
+    // UNSHIFT()
+    // Adds element(s) at the beginning of the array
+    arr.unshift(5);
+    result += "After unshift(5): " + arr + "\n";
+
+
+    // SPLICE()
+    // Syntax: array.splice(start, deleteCount, item1, item2...)
+    // Can insert, delete, or replace elements
+    arr.splice(2, 0, 15);
+    result += "After splice(2,0,15) insertion: " + arr + "\n\n";
+
+
+
+    // =====================================================
+    // 2. ARRAY DELETION METHODS
+    // =====================================================
+
+    let delArr = [10, 20, 30, 40, 50];
+
+    result += "Deletion Example Array: " + delArr + "\n";
+
+
+    // POP()
+    // Removes the last element
+    delArr.pop();
+    result += "After pop(): " + delArr + "\n";
+
+
+    // SHIFT()
+    // Removes the first element
+    delArr.shift();
+    result += "After shift(): " + delArr + "\n";
+
+
+    // SPLICE() DELETE
+    // Removes elements from any position
+    // splice(start position, number of elements)
+    delArr.splice(1, 1);
+    result += "After splice(1,1): " + delArr + "\n";
+
+
+    // DELETE OPERATOR
+    // Deletes the value but leaves an empty space
+    let a = [100, 200, 300];
+
+    delete a[1];
+
+    result += "\nAfter delete a[1]: " + a;
+    result += "\nLength remains: " + a.length + "\n\n";
+
+
+
+    // =====================================================
+    // 3. CONCAT() - MERGING ARRAYS
+    // =====================================================
+
+    let first = [1, 2, 3];
+    let second = [4, 5, 6];
+
+    let merged = first.concat(second);
+
+    result += "Array 1: " + first + "\n";
+    result += "Array 2: " + second + "\n";
+    result += "After concat(): " + merged + "\n\n";
+
+
+
+    // =====================================================
+    // 4. SLICE()
+    // =====================================================
+
+    let numbers = [10, 20, 30, 40, 50];
+
+    // slice(start,end)
+    // Creates a new array without modifying original array
+
+    let part = numbers.slice(1,4);
+
+    result += "Original Array: " + numbers + "\n";
+    result += "After slice(1,4): " + part + "\n\n";
+
+
+
+    // =====================================================
+    // 5. SORT()
+    // =====================================================
+
+    let nums = [50, 10, 40, 20, 30];
+
+    // Default sort converts values to strings
+    nums.sort();
+
+    result += "After normal sort(): " + nums + "\n";
+
+
+    // Numeric ascending sort
+    nums.sort(function(a,b){
+        return a-b;
+    });
+
+    result += "Numeric ascending sort: " + nums + "\n\n";
+
+
+
+    // =====================================================
+    // 6. REVERSE()
+    // =====================================================
+
+    let rev = [1,2,3,4,5];
+
+    rev.reverse();
+
+    result += "After reverse(): " + rev + "\n\n";
+
+
+
+    // =====================================================
+    // STRING METHODS
+    // =====================================================
+
+
+    let str = "JavaScript Programming";
+
+    result += "Original String: " + str + "\n\n";
+
+
+    // length
+    result += "Length: " + str.length + "\n";
+
+
+    // toUpperCase()
+    result += "Uppercase: " + str.toUpperCase() + "\n";
+
+
+    // toLowerCase()
+    result += "Lowercase: " + str.toLowerCase() + "\n";
+
+
+    // charAt()
+    result += "Character at index 4: " + str.charAt(4) + "\n";
+
+
+    // indexOf()
+    result += "Index of 'Script': " + str.indexOf("Script") + "\n";
+
+
+    // includes()
+    result += "Contains 'Java': " + str.includes("Java") + "\n";
+
+
+    // substring()
+    result += "Substring: " + str.substring(0,10) + "\n";
+
+
+    // slice() for strings
+    result += "String slice: " + str.slice(0,10) + "\n";
+
+
+    // replace()
+    result += "Replace Java with Type: "
+            + str.replace("Java","Type") + "\n";
+
+
+    // split()
+    // Converts string into array
+
+    let words = str.split(" ");
+
+    result += "After split(): " + words + "\n";
+
+
+    // trim()
+    let text = "   Hello World   ";
+
+    result += "Before trim: '" + text + "'\n";
+    result += "After trim: '" + text.trim() + "'\n";
+
+
+    // Display output
+    document.getElementById("output").innerHTML = result;
+
+}
+
+</script>
+
+</body>
+</html>

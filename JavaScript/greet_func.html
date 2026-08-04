@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #fff8dc;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 10px;
+        }
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Greeting Program</h2>
+
+<label for="fname">First Name:</label>
+<input type="text" id="fname" placeholder="First Name"><br>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" placeholder="Last Name"><br>
+
+<button onclick="greet()">Display Greeting</button>
+
+<h3 id="output"></h3>
+
+<script>
+function greet() {
+
+    let first = document.getElementById("fname").value;
+    let last = document.getElementById("lname").value;
+
+    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    let today = new Date();
+    let day = days[today.getDay()];
+
+    document.getElementById("output").innerHTML =
+        "Hello " + first + " " + last +
+        ", wish you a good " + day;
+}
+</script>
+
+</body>
+</html>
