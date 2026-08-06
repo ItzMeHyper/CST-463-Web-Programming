@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strong Number</title>
+</head>
+<body>
+
+    <h2>Check Strong Number</h2>
+
+    <label>Enter a Number:</label>
+    <input type="number" id="num">
+    <br><br>
+
+    <button onclick="checkStrong()">Check</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+        function factorial(n) {
+            let fact = 1;
+            for (let i = 1; i <= n; i++) {
+                fact *= i;
+            }
+            return fact;
+        }
+
+        function checkStrong() {
+            let num = parseInt(document.getElementById("num").value);
+            let temp = num;
+            let sum = 0;
+
+            while (temp > 0) {
+                let digit = temp % 10;
+                sum += factorial(digit);
+                temp = Math.floor(temp / 10);
+            }
+
+            if (sum == num)
+                document.getElementById("result").innerHTML = num + " is a Strong Number";
+            else
+                document.getElementById("result").innerHTML = num + " is Not a Strong Number";
+        }
+
+    </script>
+
+</body>
+</html>

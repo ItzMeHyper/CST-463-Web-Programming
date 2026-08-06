@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linear Search</title>
+</head>
+
+<body>
+
+    <h2>Linear Search Program</h2>
+
+    Enter number to search:
+    <input type="text" id="search">
+    <br><br>
+
+    <button onclick="linearSearch()">Search</button>
+
+
+    <script>
+
+        function linearSearch() {
+
+            let arr = [10, 20, 30, 40, 50];
+
+            let key = Number(document.getElementById("search").value);
+
+            let found = false;
+            let position = -1;
+
+            for (let i = 0; i < arr.length; i++) {
+
+                if (arr[i] == key) {
+                    found = true;
+                    position = i;
+                    break;
+                }
+            }
+
+            if (found) {
+                alert(key + " found at position " + position);
+            }
+            else {
+                alert(key + " not found");
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
