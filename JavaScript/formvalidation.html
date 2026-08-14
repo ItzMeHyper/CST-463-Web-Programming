@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "") {
+                alert("Username must not be blank");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must not be less than 6 characters");
+                return false;
+            }
+
+            alert("Form submitted successfully");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <br><br>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+</body>
+</html>
